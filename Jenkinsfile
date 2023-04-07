@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Report') {
             steps {
-                step([$class: 'Publisher'])
+                testNG
             }
         }
         stage('Post_Actions') {
